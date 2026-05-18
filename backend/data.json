@@ -1,0 +1,55 @@
+{
+  "nextUserId": 4,
+  "nextVacationId": 3,
+  "users": [
+    {
+      "id": 1,
+      "name": "Teste Gestor",
+      "email": "testegestor@example.com",
+      "password_hash": "$2a$10$ici1.vA3w6496mmV4WWBNOD4FCHP0vg0eYJ2NaSV8YUGVgQhMqNZi",
+      "role": "manager",
+      "manager_id": null,
+      "vacation_balance": 30
+    },
+    {
+      "id": 2,
+      "name": "Teste Funcionario",
+      "email": "testefuncionario@example.com",
+      "password_hash": "$2a$10$df.E1YD9OhZVYhOF6qK4ieGbCFyBt44y/kjqSus1tepRCMaUu/nYm",
+      "role": "employee",
+      "manager_id": 1,
+      "vacation_balance": 30
+    },
+    {
+      "id": 3,
+      "name": "lucas",
+      "email": "lucasteste@teste.com",
+      "password_hash": "$2a$10$cYmVAQ3vIsJoTdWeyX7rI.95e45YVbJU.HfWSpwo0kvwVJ/ycGBc6",
+      "role": "employee",
+      "manager_id": null,
+      "vacation_balance": 0
+    }
+  ],
+  "vacation_requests": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-16",
+      "total_days": 30,
+      "status": "approved",
+      "manager_comment": "Aprovado pelo gestor.",
+      "created_at": "2026-05-18T18:25:43.735Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "start_date": "2026-05-18",
+      "end_date": "2026-06-04",
+      "total_days": 18,
+      "status": "rejected",
+      "manager_comment": "Rejeitado pelo gestor.",
+      "created_at": "2026-05-18T18:34:47.637Z"
+    }
+  ]
+}
